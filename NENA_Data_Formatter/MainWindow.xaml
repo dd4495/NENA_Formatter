@@ -1,0 +1,19 @@
+﻿<Window x:Class="_911Updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_911Updater"
+        mc:Ignorable="d"
+        Title="911 Updater" Height="503.434" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="Enter 911 Information in Update format:&#xD;&#xA;Campus Building Room Phone Transaction&#xD;&#xA;Example:&#xD;&#xA;A  BCDE 300B  x5555  N" HorizontalAlignment="Left" Height="88" Margin="48,18,0,0" VerticalAlignment="Top" Width="395"/>
+        <Button x:Name="enter" Content="Enter" HorizontalAlignment="Left" Height="24" Margin="48,285,0,0" VerticalAlignment="Top" Width="85" Click="enter_click"/>
+        <Button x:Name="cancel" Content="Cancel" HorizontalAlignment="Left" Height="24" Margin="204,285,0,0" VerticalAlignment="Top" Width="85" IsCancel="True" Click="cancel_Click"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Height="24" Margin="358,285,0,0" VerticalAlignment="Top" Width="85" Click="clear_click"/>
+        <TextBox x:Name="datafield" HorizontalAlignment="Left" Height="135" Margin="48,131,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Top" Width="395"/>
+        <TextBox x:Name="statusBox" HorizontalAlignment="Left" Height="62" Margin="48,340,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="395"/>
+        <Button x:Name="clearRes" Content="Clear Results" HorizontalAlignment="Left" Margin="204,407,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="clearRes_Click"/>
+
+    </Grid>
+</Window>
